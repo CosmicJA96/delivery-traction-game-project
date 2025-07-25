@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjewr82m0ro1o"]
+
+[ext_resource type="Texture2D" uid="uid://mslr5i2kloe2" path="res://kenney_racing-pack/PNG/Objects/tree_small.png" id="1_eyhca"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6chaj"]
+radius = 67.0671
+
+[node name="SmallTree" type="StaticBody2D"]
+
+[node name="TreeSmall" type="Sprite2D" parent="."]
+texture = ExtResource("1_eyhca")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 0.0753767
+shape = SubResource("CircleShape2D_6chaj")
