@@ -49,6 +49,3 @@ func apply_friction(delta):
 	var friction_force = velocity * friction * delta
 	var drag_force = velocity * velocity.length() * drag * delta
 	acceleration += drag_force + friction_force
-
-func _on_timer_timeout():
-	print('Times Up!')
